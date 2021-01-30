@@ -1,8 +1,4 @@
 @media only screen and (max-width: 600px) {
-   /* nav{
-       margin: 0 auto;
-       
-   } */
    nav ul {
        flex-direction: column;
      padding-left: 0rem;

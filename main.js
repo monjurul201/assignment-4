@@ -1,3 +1,5 @@
+// On handle click 
+
 const bookingProcess = document.getElementById('booking-Process');
 bookingProcess.addEventListener('click', function () {
     const main = document.getElementById('main-content');
@@ -13,6 +15,7 @@ const ConfirmProcess=document.getElementById('click-Confirm');
     congratulation.style.display="block"
 });
 
+//increment & decrement part   
 
 function ticketQuantityChange(ticket, isIncrement) {
     const ticketCount = document.getElementById(ticket + '-Count');
@@ -36,6 +39,8 @@ function ticketQuantityChange(ticket, isIncrement) {
     document.getElementById(ticket + '-totalTicketAmount').innerText = ticketTotal;
     calculationTotal();
 }
+//adding part 
+
 function calculationTotal() {
     const specialCount = getInputValue('special');
     const commonCount = getInputValue('common');
