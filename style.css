@@ -160,13 +160,12 @@ nav ul li a:hover, a.active{
    color: black;
 }
 .congratulation img{
-   margin-left: auto;
-   
-    width: 80%;
-    /* border-radius: 100%; */
+    width: 50%;
+    border-radius: 50%;
 
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}

@@ -5,7 +5,13 @@ bookingProcess.addEventListener('click', function () {
     const confirm=document.getElementById('confirmation');
     confirm.style.display="block"
 });
-
+const ConfirmProcess=document.getElementById('click-Confirm');
+    ConfirmProcess.addEventListener('click',function(){
+    confirmProcess=document.getElementById('password');
+    confirmProcess.style.display="none"
+    const congratulation=document.getElementById('congratulation');
+    congratulation.style.display="block"
+});
 
 
 function ticketQuantityChange(ticket, isIncrement) {
