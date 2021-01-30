@@ -18,7 +18,17 @@ function ticketQuantityChange(ticket, isIncrement){
    }
 
     document.getElementById(ticket + '-totalTicketAmount').innerText=ticketTotal;
+    
 }
+// function calculationTotal (){
+// const specialCount=document.getElementById('special-Count').value;
+// const specialCount=parseInt(specialCount.value);  
+
+// const commonCount=document.getElementById('common-Count').value;
+// const commonCount=parseInt(commonCount.value);
+// const Subtotal=specialCount*150+commonCount*100;
+// document.getElementById('SubTotal-prize').innerText=Subtotal;
+// }
 
 
 //    function specialQuantityChange(isIncrement){
