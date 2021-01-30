@@ -40,45 +40,4 @@
     text-align: center;
   }
 
-  @media only screen and (max-width: 768px) {
-    /* nav{
-        margin: 0 auto;
-        
-    } */
-    nav ul {
-        flex-direction: column;
-      padding-left: 0rem;
-    }
-    li{
-        padding-bottom: 20px;
-    }
-    .container{
-        width: 100%;
-        display: flex;
-        flex-direction: column-reverse;
-        margin: 0 auto;
-        padding-left:20px ;
-        padding-bottom: 150px;
-        
-    }
-    .password {
-     background-color: white;
-     margin: 0 auto;
-     overflow: hidden;
-     width: 100%;
-     padding: 50px;
-     border: 1px solid gray;
-     border-radius: 10px;
-    
-   }
-   .congratulation{
-     background-color: white;
-     margin: 0 auto;
-     overflow: hidden;
-     width: 100%;
-     padding: 50px;
-     border: 1px solid gray;
-     border-radius: 10px;
  
-     text-align: center;
-   }
