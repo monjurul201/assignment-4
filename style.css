@@ -147,6 +147,7 @@ nav ul li a:hover, a.active{
     border-radius: 10px;
 }
 .congratulation{
+    text-align: center;
     background-color: white;
     margin: 0 auto;
     overflow: hidden;
