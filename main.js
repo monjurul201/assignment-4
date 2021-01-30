@@ -1,3 +1,7 @@
+var totalTicketPrice=0;
+var SpecialTotalTicket=0;
+var CommonTotalTicket=0;
+
 // On handle click 
 
 const bookingProcess = document.getElementById('booking-Process');
@@ -11,8 +15,13 @@ const ConfirmProcess=document.getElementById('click-Confirm');
     ConfirmProcess.addEventListener('click',function(){
     confirmProcess=document.getElementById('password');
     confirmProcess.style.display="none"
+    document.getElementById('congratsPrice').innerText=totalTicketPrice;
+    document.getElementById('congratsSpecial').innerText=SpecialTotalTicket;
+    document.getElementById('congratsCommon').innerText=CommonTotalTicket;
+    
     const congratulation=document.getElementById('congratulation');
     congratulation.style.display="block"
+
 });
 
 //increment & decrement part   
@@ -30,10 +39,17 @@ function ticketQuantityChange(ticket, isIncrement) {
     ticketCount.value = ticketNewCount;
     let ticketTotal = 0;
     if (ticket == 'special') {
+
         ticketTotal = ticketNewCount * 150;
+         SpecialTotalTicket++ ;
+
+
     }
     if (ticket == 'common') {
         ticketTotal = ticketNewCount * 100;
+        CommonTotalTicket++;
+
+
     }
 
     document.getElementById(ticket + '-totalTicketAmount').innerText = ticketTotal;
@@ -52,6 +68,7 @@ function calculationTotal() {
 
     const grandTotal = Subtotal + tax;
     document.getElementById('grand-total').innerText = grandTotal;
+    totalTicketPrice=grandTotal;
 
 }
 
