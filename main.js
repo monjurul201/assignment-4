@@ -1,3 +1,13 @@
+const bookingProcess = document.getElementById('booking-Process');
+bookingProcess.addEventListener('click', function () {
+    const main = document.getElementById('main-content');
+    main.style.display = "none";
+    const confirm=document.getElementById('confirmation');
+    confirm.style.display="block"
+});
+
+
+
 function ticketQuantityChange(ticket, isIncrement) {
     const ticketCount = document.getElementById(ticket + '-Count');
     const TicketCount = parseInt(ticketCount.value);
@@ -41,6 +51,7 @@ function getInputValue(ticket) {
 }
 
 
+
 //    function specialQuantityChange(isIncrement){
 //     const specialCount=document.getElementById('special-Count');
 //     const specialTicketCount=parseInt(specialCount.value);
@@ -72,7 +83,7 @@ function getInputValue(ticket) {
 //        const commonTotalAmount=commonNewCount*100;
 //        document.getElementById('totalCommonTicketAmount').innerText=commonTotalAmount;
 //    }
-   
+
 
 
 
@@ -90,7 +101,7 @@ function getInputValue(ticket) {
 //        if(ticketCount>0){
 //        commonNewCount=ticketCount-1;
 //        }
-       
+
 //        count.value=ticketNewCount;
 //        const TotalTicketAmount=ticketNewCount*100;
 //        document.getElementById('totalTicketAmount').innerText=TotalTicketAmount;
